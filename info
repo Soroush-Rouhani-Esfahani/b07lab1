@@ -1,3 +1,23 @@
 This repository contains my submission for Lab 1 in CSCB07
 
-By Soroush Rouhani Esfahani; September 24th, 2023
+By Soroush Rouhani Esfahani; September 25th, 2023
+
+Brief overview of functions in Polynomial.java:
+
+Polynomial():
+  A constructor of the class, which serves to set the coefficients array to [0] which is the default value as per the lab handout.
+
+Polynomial(double[] coefficientVals):
+  A constructor of the class, which receives an array of doubles representing the desired coefficients of the polynomial as a parameter.
+  If the parameter contains data, then the coefficients array is set to a copy of the array of doubles.
+  If the parameter is null or empty, then the coefficients array is set to the default value of [0] to avoid errors.
+
+public Polynomial add(Polynomial other):
+  Receives another Polynomial as parameter, and returns a new Polynomial where the coefficients for each degree are the sum of this polynomial's and the other polynomial's coefficients for the respective degree.
+  Null or empty coefficient arrays are treated as [0] for both Polynomials.
+
+public double evaluate(double x):
+  Receives a double x as parameter, and returns a double representing the value of the polynomial represented by this Polynomial at the given x.
+
+public boolean hasRoot(double x):
+  Receives a double x as parameter, Returns true if and only if the given x is a root of the polynomial represented by this Polynomial.
