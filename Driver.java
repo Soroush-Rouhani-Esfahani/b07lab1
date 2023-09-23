@@ -1,3 +1,12 @@
+/*
+Soroush Rouhani Esfahani
+CSCB07H3
+September 24th, 2023
+Lab 1 - Driver.java
+
+Driver code as given in the lab handout.
+*/
+
 public class Driver {
     public static void main(String [] args) {
         Polynomial p = new Polynomial();
@@ -8,7 +17,7 @@ public class Driver {
         Polynomial p2 = new Polynomial(c2);
         Polynomial s = p1.add(p2);
         System.out.println("s(0.1) = " + s.evaluate(0.1));
-        if(s.hasRoot(1))
+        if (s.hasRoot(1))
             System.out.println("1 is a root of s");
         else
             System.out.println("1 is not a root of s");
